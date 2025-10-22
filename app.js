@@ -3,7 +3,7 @@ let tg = window.Telegram.WebApp;
 tg.expand();
 
 tg.MainButton.textColor = "#FFFFFF";
-tg.MainButton.color = "#2cab37";
+tg.MainButton.color = "#ab2c2c";
 
 let item = "";
 
@@ -67,5 +67,6 @@ Telegram.WebApp.onEvent("mainButtonClicked", function () {
     tg.sendData(item);
 
 });
+
 
 
