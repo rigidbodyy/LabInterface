@@ -17,7 +17,7 @@
     display: inline-block;
     padding: 10px 20px;
     border: none;
-    background: rgb(248, 168, 24);
+    background: rgb(255, 128, 0);
     border-radius: 10px;
     color: #ab2c2c;
     text-transform: uppercase;
@@ -27,5 +27,5 @@
 }
 
 .btn:hover {
-    background: lightgreen;
+    background: red;
 }
