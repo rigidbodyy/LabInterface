@@ -53,7 +53,7 @@ btn4.addEventListener("click", function () {
     }
 });
 
-btn7.addEventListener("click", function () {
+btn5.addEventListener("click", function () {
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
     } else {
@@ -67,4 +67,5 @@ Telegram.WebApp.onEvent("mainButtonClicked", function () {
     tg.sendData(item);
 
 });
+
 
