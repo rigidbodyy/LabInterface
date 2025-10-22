@@ -12,8 +12,6 @@ let btn2 = document.getElementById("btn2");
 let btn3 = document.getElementById("btn3");
 let btn4 = document.getElementById("btn4");
 let btn5 = document.getElementById("btn5");
-let btn6 = document.getElementById("btn6");
-let btn7 = document.getElementById("btn7");
 
 btn1.addEventListener("click", function () {
     if (tg.MainButton.isVisible) {
@@ -55,36 +53,17 @@ btn4.addEventListener("click", function () {
     }
 });
 
-btn5.addEventListener("click", function () {
-    if (tg.MainButton.isVisible) {
-        tg.MainButton.hide();
-    } else {
-        tg.MainButton.setText("Добавить Спрайт в корзину");
-        item = "5";
-        tg.MainButton.show();
-    }
-});
-
-btn6.addEventListener("click", function () {
-    if (tg.MainButton.isVisible) {
-        tg.MainButton.hide();
-    } else {
-        tg.MainButton.setText("Добавить Фанта в корзину");
-        item = "6";
-        tg.MainButton.show();
-    }
-});
-
 btn7.addEventListener("click", function () {
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
     } else {
         tg.MainButton.setText("Добавить Десерт в корзину");
-        item = "7";
+        item = "5";
         tg.MainButton.show();
     }
 });
 
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
     tg.sendData(item);
+
 });
